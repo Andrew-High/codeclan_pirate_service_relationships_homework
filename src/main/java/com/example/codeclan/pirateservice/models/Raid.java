@@ -2,6 +2,7 @@ package com.example.codeclan.pirateservice.models;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "raids")
@@ -33,7 +34,7 @@ public class Raid {
                     updatable = false)
             }
     )
-    private ArrayList<Pirate> pirates;
+    private List<Pirate> pirates;
 
     public Raid(String location, int loot) {
         this.location = location;
